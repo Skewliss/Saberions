@@ -66,7 +66,7 @@ client.on("guildMemberAdd", user =>{
   .setAuthor(user.user.username, user.user.displayAvatarURL)
   .setDescription(":grin: Bienvenue " + user + " sur notre serveur **" + user.guild.name + "** !")
   .setFooter("Saberions Game | By Skewliss", 'https://i.imgur.com/UxNctHU.png')
-  user.guild.channels.get("548348879226142722").send(joinEmbed)
+  user.guild.channels.get("781862895876440064").send(joinEmbed)
 });
 
 client.on("guildMemberRemove", user =>{
@@ -75,7 +75,7 @@ client.on("guildMemberRemove", user =>{
   .setAuthor(user.user.username, user.user.displayAvatarURL)
   .setDescription(":cry: Sniff... " + user + " a quitté notre serveur **" + user.guild.name + "** !")
   .setFooter("Saberions Game | By Skewliss", 'https://i.imgur.com/UxNctHU.png')
-  user.guild.channels.get("548348879226142722").send(leaveEmbed)
+  user.guild.channels.get("781862895876440064").send(leaveEmbed)
 });
 
 client.login(process.env.TOKEN);
